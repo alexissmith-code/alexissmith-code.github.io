@@ -1,2 +1,2 @@
-# alexissmith-code.portfoliowebsiteversion1.github.io
+# alexissmith-code.github.io
 Website version 1
