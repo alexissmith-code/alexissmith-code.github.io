@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="../css/week05.css" type="text/css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Survey</title>
+  </head>
+
+  <body>
+    <div id="headersurvey">
+      <h1>Contact Me</h1>
+      <ul class="mynav">
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="computerScience.html">COMPUTER SCIENCE</a></li>
+        <li><a href="graphicDesign.html">GRAPHIC DESIGN</a></li>
+      </ul>
+    </div>
+    <div id="surveyform">
+      <form action="#" method="post">
+
+        <fieldset>
+          <legend>Your Information</legend>
+          <label for="name">Full Name:</label><br>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+          <label for="email">Email Address:</label><br>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+          <label for="phone">Phone Number:</label><br>
+          <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555"><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Reason for Contact</legend>
+          <label for="topic">I’m interested in:</label><br>
+          <select id="topic" name="topic" required>
+            <option value="">-- Please Select --</option>
+            <option value="webdev">Web Development</option>
+            <option value="graphicdesign">Graphic Design</option>
+            <option value="software">Software Project</option>
+            <option value="collaboration">Collaboration Opportunity</option>
+            <option value="other">Other</option>
+          </select><br><br>
+
+          <label>Preferred Contact Method:</label><br>
+          <input type="radio" name="contactmethod" value="email" checked> Email
+          <input type="radio" name="contactmethod" value="phone"> Phone
+          <input type="radio" name="contactmethod" value="linkedin"> LinkedIn<br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your Message</legend>
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" cols="40" rows="6" placeholder="Write your message here..." required></textarea>
+        </fieldset>
+
+        <input type="submit" value="Send Message">
+      </form>
+    </div>
+  </body>
+</html>
